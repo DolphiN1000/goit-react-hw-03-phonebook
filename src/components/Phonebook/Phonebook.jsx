@@ -79,7 +79,7 @@ class Phonebook extends Component {
     const { contacts } = this.state;
     const result = contacts.find(({ name, number }) => {
       return (
-        name.toLocaleLowerCase() === normalizedName &&
+        name.toLocaleLowerCase() === normalizedName ||
         number.toLocaleLowerCase() === normalizedNumber
       );
     });
